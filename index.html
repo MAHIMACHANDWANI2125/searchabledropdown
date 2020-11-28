@@ -1,0 +1,15 @@
+<!  DOCTYPE html>
+<head>
+  <title>SEARCHABLE DROPDOWN</title>
+</head>
+<body>
+  <h1>SEARCHABLE DROPDOWN FOR MAP_NO'S</h1>
+  <input list="ddlcomplete" placeholder="Search map_no"/>
+  <datalist id="ddlcomplete">
+    {%for result in autocomplete%}
+    <<option>{{result.map_no}}</option>>
+    {%end for%}
+
+  </datalist>>
+</body>
+</html>
